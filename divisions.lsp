@@ -1,5 +1,5 @@
 ;; Draw a straight line from the mid point of a straight line
-(defun c:LineFromMidPoint()
+(defun c:LT-LineFromMidPoint()
   (setq p1(getpoint "\n Pick First Point of the reference line")
             p2(getpoint "\n Pick Second Point of the reference line")
             p3(getpoint "\n Define the end point of the new line")
@@ -11,7 +11,7 @@
 )
 
 ;; Draw a straight line from the mid point of a straight line
-(defun c:LineFromThirdPoint()
+(defun c:LT-LineFromThirdPoint()
   (setq p1(getpoint "\n Pick First Point of the reference line")
             p2(getpoint "\n Pick Second Point of the reference line")
             p3(getpoint "\n Define the end point of the new line")
@@ -23,7 +23,7 @@
 )
 
 ;; Draw a straight line from the point at the golden section of a straight line
-(defun c:LineFromGoldenSection()
+(defun c:LT-LineFromGoldenSection()
   (setq p1(getpoint "\n Pick First Point of the reference line")
             p2(getpoint "\n Pick Second Point of the reference line")
             p3(getpoint "\n Define the end point of the new line")
