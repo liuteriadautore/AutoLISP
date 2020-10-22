@@ -24,6 +24,21 @@
   (drawvesicapiscis vpq1 vpq2)
 )
 
+(defun c:LT-VesicaByStartIntersection ()
+  (setq
+    vpq1 (getpoint "Set the first quadrant point")
+    vpi (getpoint "Set the intersection point")
+  ) 
+  
+  ; find the second quadrant point
+  (setq vpq2x(+ (car vpq1) (* (- (car vpi) (car vpq1)) 2)))
+  (setq vpq2y (cadr vpq1))
+  (setq vpq2 (list vpq2x vpq2y))
+  
+  ; draw the vesica
+  (drawvesicapiscis vpq1 vpq2)
+)
+
 (defun c:LT-VesicaByCenterEnd ()
   ; Constuct a Vesica Piscis from the center and the end point, at the maximum width
   (setq 
