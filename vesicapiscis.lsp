@@ -55,6 +55,23 @@
   (drawvesicapiscis vpq1 vpq2)
 )
 
+(defun c:LT-VesicaByCenterIntersection ()
+  (setq 
+    vpc (getpoint "Set the center point")  
+    vpi (getpoint "Set the intersection point")
+  )
+  
+  ; find the first quadrant point
+  (setq vpq1x ( -  (car vpc) ( * ( / ( - (cadr vpc) (cadr vpi)) 1.73) 3)))  
+  (setq vpq1 (list vpq1x (cadr vpc)))
+  
+  ; find the second quadrant point
+  (setq vpq2x ( +  (car vpc) ( * ( / ( - (cadr vpc) (cadr vpi)) 1.73) 3)))  
+  (setq vpq2 (list vpq2x (cadr vpc)))
+        
+  ; draw the vesica
+  (drawvesicapiscis vpq1 vpq2)
+)
 ;;; Internal Functions
 (defun DrawVesicaPiscis (vpq1 vpq2)
   ; define the first center point, at one third between the two defined points
