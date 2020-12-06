@@ -72,6 +72,8 @@
   ; draw the vesica
   (drawvesicapiscis vpq1 vpq2)
 )
+
+
 ;;; Internal Functions
 (defun DrawVesicaPiscis (vpq1 vpq2)
   ; define the first center point, at one third between the two defined points
