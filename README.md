@@ -1,10 +1,12 @@
-# AutoLISP-Files
-My own autolisp routines, with some commands and routines for luthiery specific drawing tasks
+# AutoLISP Routines and Commands
+My own autolisp routines, with some commands and routines for luthiery specific drawing tasks. Both for CorelCAD 2019 and AutoCAD 2021.
 
-## startup.lsp
+## CorelCAD
+
+### startup.lsp
 My CorelCAD startup file, to automatically load my customizations
 
-## divisions.lsp
+### divisions.lsp
 It allow to construct new lines from the division between two defined points
 
 #### Line From Mid Point
@@ -22,7 +24,7 @@ Ask to define two points; the point at one third their distances is calculated, 
 
 Ask to define two points; then, a point at the golden section from them is calculated, and a line start to be drawn from there. The new line finish when defining the third and last point.
 
-## vesicapiscis.lsp
+### vesicapiscis.lsp
 It construct a Vesica Piscis from two defined points
 
 #### Vesica by Start End
